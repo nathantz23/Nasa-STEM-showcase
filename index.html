@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NASA & STEM Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/edu_2022_artemisrocket.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 40, 0.8);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero blockquote {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 700px;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #396a9c;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      right: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><strong>NASA Showcase</strong></div>
+    <ul>
+      <li><a href="#literature">Literature Review</a></li>
+      <li><a href="#profile">Profile & Statement</a></li>
+      <li><a href="#proposal">Proposal</a></li>
+      <li><a href="#works">Works Cited</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>NASA’s Impact on STEM Education</h1>
+    <blockquote>
+      “From space shuttles to school curriculums—exploring how innovation inspires education.”
+    </blockquote>
+    <button class="btn" onclick="window.location='#literature'">Continue</button>
+  </section>
+
+  <footer>Created by: Nathan Zano</footer>
+</body>
+</html>
